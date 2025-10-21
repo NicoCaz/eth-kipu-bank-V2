@@ -1,0 +1,256 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MockV3Aggregator",
+  "sourceName": "src/mocks/MockV3Aggregator.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "_decimals",
+          "type": "uint8"
+        },
+        {
+          "internalType": "int256",
+          "name": "_initialAnswer",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "description",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "getAnswer",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint80",
+          "name": "_roundId",
+          "type": "uint80"
+        }
+      ],
+      "name": "getRoundData",
+      "outputs": [
+        {
+          "internalType": "uint80",
+          "name": "roundId",
+          "type": "uint80"
+        },
+        {
+          "internalType": "int256",
+          "name": "answer",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startedAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "updatedAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint80",
+          "name": "answeredInRound",
+          "type": "uint80"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTimestamp",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "latestAnswer",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "latestRound",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "latestRoundData",
+      "outputs": [
+        {
+          "internalType": "uint80",
+          "name": "roundId",
+          "type": "uint80"
+        },
+        {
+          "internalType": "int256",
+          "name": "answer",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startedAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "updatedAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint80",
+          "name": "answeredInRound",
+          "type": "uint80"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "latestTimestamp",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "_answer",
+          "type": "int256"
+        }
+      ],
+      "name": "updateAnswer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint80",
+          "name": "_roundId",
+          "type": "uint80"
+        },
+        {
+          "internalType": "int256",
+          "name": "_answer",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_timestamp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_startedAt",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateRoundData",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "version",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080346100c35761050c90601f38839003908101601f19168201906001600160401b038211838310176100c857808391604095869485528339810103126100c35780519060ff82168092036100c3576020015160009160ff19835416178255806001554260025560035460001981146100af576001018060035582526004602052828220556003548152600560205242828220556003548152600660205281429120555161042d90816100df8239f35b634e487b7160e01b83526011600452602483fd5b600080fd5b634e487b7160e01b600052604160045260246000fdfe60806040908082526004908136101561001757600080fd5b600091823560e01c918263313ce567146103bc575081634aa2011f1461035e57816350d25bcd1461033f57816354fd4d5014610323578163668a0f02146103045781637284e4161461025d5781638205bf6a1461023a5781639a6fc8f5146101c6578163a87a20ce14610157578163b5ab58dc1461012f578163b633620c14610102575063feaf968c146100aa57600080fd5b346100ff57806003193601126100ff5750600354600154600254925169ffffffffffffffffffff9092168083526020830191909152604082018390526060820192909252608081019190915260a090f35b0390f35b80fd5b8391503461012b57602036600319011261012b5760209282913581526005845220549051908152f35b8280fd5b8391503461012b57602036600319011261012b57602092818392358252845220549051908152f35b8391503461012b57602036600319011261012b57803590816001554260025560035460001981146101b3576001018060035584526020528183205560035482526005602052428183205560035482526006602052429082205580f35b634e487b7160e01b855260118252602485fd5b8391503461012b57602036600319011261012b576100fb906101e66103d9565b69ffffffffffffffffffff16808552602091825283852054600683528486205460058452958590205494518281529283015260408201949094526060810192909252608082019290925290819060a0820190565b8284346102595781600319360112610259576020906002549051908152f35b5080fd5b8391503461012b578260031936011261012b578151908282019082821067ffffffffffffffff8311176102f157508252600f81526020906e135bd8dac8141c9a58d94811995959608a1b8282015282519382859384528251928382860152825b8481106102db57505050828201840152601f01601f19168101030190f35b81810183015188820188015287955082016102bd565b634e487b7160e01b855260419052602484fd5b8284346102595781600319360112610259576020906003549051908152f35b8284346102595781600319360112610259576020905160018152f35b8284346102595781600319360112610259576020906001549051908152f35b8391503461012b57608036600319011261012b5761037a6103d9565b906024359069ffffffffffffffffffff604435931680600355826001558360025585526020528284205560056020528183205560066020526064359082205580f35b83903461025957816003193601126102595760ff60209254168152f35b6004359069ffffffffffffffffffff821682036103f257565b600080fdfea2646970667358221220670e018a0b8ddd3513b634b4c23d8e00cfa5429d93e85d0ffeabf47f3862d8cc64736f6c63430008130033",
+  "deployedBytecode": "0x60806040908082526004908136101561001757600080fd5b600091823560e01c918263313ce567146103bc575081634aa2011f1461035e57816350d25bcd1461033f57816354fd4d5014610323578163668a0f02146103045781637284e4161461025d5781638205bf6a1461023a5781639a6fc8f5146101c6578163a87a20ce14610157578163b5ab58dc1461012f578163b633620c14610102575063feaf968c146100aa57600080fd5b346100ff57806003193601126100ff5750600354600154600254925169ffffffffffffffffffff9092168083526020830191909152604082018390526060820192909252608081019190915260a090f35b0390f35b80fd5b8391503461012b57602036600319011261012b5760209282913581526005845220549051908152f35b8280fd5b8391503461012b57602036600319011261012b57602092818392358252845220549051908152f35b8391503461012b57602036600319011261012b57803590816001554260025560035460001981146101b3576001018060035584526020528183205560035482526005602052428183205560035482526006602052429082205580f35b634e487b7160e01b855260118252602485fd5b8391503461012b57602036600319011261012b576100fb906101e66103d9565b69ffffffffffffffffffff16808552602091825283852054600683528486205460058452958590205494518281529283015260408201949094526060810192909252608082019290925290819060a0820190565b8284346102595781600319360112610259576020906002549051908152f35b5080fd5b8391503461012b578260031936011261012b578151908282019082821067ffffffffffffffff8311176102f157508252600f81526020906e135bd8dac8141c9a58d94811995959608a1b8282015282519382859384528251928382860152825b8481106102db57505050828201840152601f01601f19168101030190f35b81810183015188820188015287955082016102bd565b634e487b7160e01b855260419052602484fd5b8284346102595781600319360112610259576020906003549051908152f35b8284346102595781600319360112610259576020905160018152f35b8284346102595781600319360112610259576020906001549051908152f35b8391503461012b57608036600319011261012b5761037a6103d9565b906024359069ffffffffffffffffffff604435931680600355826001558360025585526020528284205560056020528183205560066020526064359082205580f35b83903461025957816003193601126102595760ff60209254168152f35b6004359069ffffffffffffffffffff821682036103f257565b600080fdfea2646970667358221220670e018a0b8ddd3513b634b4c23d8e00cfa5429d93e85d0ffeabf47f3862d8cc64736f6c63430008130033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
