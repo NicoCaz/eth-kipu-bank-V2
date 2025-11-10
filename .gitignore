@@ -1,1 +1,60 @@
-node_modules
+# Dependencies
+node_modules/
+package-lock.json
+
+# Hardhat files
+cache/
+artifacts/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# TypeScript
+*.tsbuildinfo
+typechain/
+typechain-types/
+
+# Coverage reports
+coverage/
+coverage.json
+
+# Hardhat Ignition default folder for deployments against a local node
+ignition/deployments/chain-31337
+
+# Gas reporter output
+gas-report.txt
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Testing
+.nyc_output/
+
+# Build outputs
+dist/
+build/
+out/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Deployment addresses (optional - comment out if you want to track these)
+# deployments/
+# addresses.json
